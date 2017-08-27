@@ -1,5 +1,4 @@
 // SPI Master Example
-// Runs on any Arduino
 // Adapted from Nick Gammon
 // http://www.gammon.com.au/spi
 
@@ -60,7 +59,7 @@ void loop() {
 
 byte spiTransfer(const byte b) {
   byte result = SPI.transfer(b);
-  delayMicroseconds(5);
+  delayMicroseconds(20);
   return result;
 }
 
